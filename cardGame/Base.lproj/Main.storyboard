@@ -23,32 +23,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhB-qF-jAC">
-                                <rect key="frame" x="164" y="617" width="46" height="30"/>
-                                <state key="normal" title="Draw"/>
+                                <rect key="frame" x="141" y="617" width="93" height="30"/>
+                                <state key="normal" title="Connect"/>
                                 <connections>
-                                    <action selector="drawCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GYN-N2-r9w"/>
+                                    <action selector="connectWithPlayer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bin-Rb-kRM"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aeW-jw-IFC">
-                                <rect key="frame" x="0.0" y="419" width="375" height="190"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="190" id="QlD-IZ-RyY"/>
-                                </constraints>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSE-1u-SaC">
+                                <rect key="frame" x="151" y="318" width="72" height="30"/>
+                                <state key="normal" title="Draw Card"/>
+                                <connections>
+                                    <action selector="drawCardPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pdd-Dr-Alr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other Player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qj2-pl-KhS">
+                                <rect key="frame" x="140" y="28" width="95" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="IhB-qF-jAC" firstAttribute="top" secondItem="aeW-jw-IFC" secondAttribute="bottom" constant="8" id="AI1-LC-8Kt"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="IhB-qF-jAC" secondAttribute="trailing" constant="149" id="BWh-IR-RXK"/>
-                            <constraint firstAttribute="trailing" secondItem="aeW-jw-IFC" secondAttribute="trailing" id="MuW-nr-9Wj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IhB-qF-jAC" secondAttribute="trailing" constant="125" id="BWh-IR-RXK"/>
+                            <constraint firstItem="ZSE-1u-SaC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vsp-Dj-l26"/>
+                            <constraint firstItem="Qj2-pl-KhS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="isD-U1-2GI"/>
+                            <constraint firstItem="ZSE-1u-SaC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kfh-jM-eNT"/>
+                            <constraint firstItem="Qj2-pl-KhS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l2A-5h-geR"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IhB-qF-jAC" secondAttribute="bottom" constant="20" id="rZm-IX-yf1"/>
-                            <constraint firstItem="IhB-qF-jAC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="148" id="tCO-7u-cz7"/>
-                            <constraint firstItem="aeW-jw-IFC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="v2F-2M-fRP"/>
+                            <constraint firstItem="IhB-qF-jAC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="125" id="tCO-7u-cz7"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="cardArea" destination="aeW-jw-IFC" id="pmv-BW-Wxp"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

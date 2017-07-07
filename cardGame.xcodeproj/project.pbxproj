@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C03C033D1F0EE75900DE398C /* MPCHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C033C1F0EE75900DE398C /* MPCHandler.swift */; };
 		C0A5DCCD1F0E8E86008DC0C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A5DCCC1F0E8E86008DC0C5 /* AppDelegate.swift */; };
 		C0A5DCCF1F0E8E86008DC0C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A5DCCE1F0E8E86008DC0C5 /* ViewController.swift */; };
 		C0A5DCD21F0E8E86008DC0C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A5DCD01F0E8E86008DC0C5 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C03C033C1F0EE75900DE398C /* MPCHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPCHandler.swift; sourceTree = "<group>"; };
 		C0A5DCC91F0E8E86008DC0C5 /* cardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cardGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A5DCCC1F0E8E86008DC0C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0A5DCCE1F0E8E86008DC0C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				C0A5DCCB1F0E8E86008DC0C5 /* cardGame */,
+				C0E06C851F0FF7FC00459AB5 /* utils */,
 				C0A5DCCA1F0E8E86008DC0C5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,6 +104,15 @@
 				C0A5DCCE1F0E8E86008DC0C5 /* ViewController.swift */,
 			);
 			name = controllers;
+			sourceTree = "<group>";
+		};
+		C0E06C851F0FF7FC00459AB5 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				C03C033C1F0EE75900DE398C /* MPCHandler.swift */,
+			);
+			name = utils;
+			path = cardGame;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0A5DCE21F0E8F46008DC0C5 /* Deck.swift in Sources */,
+				C03C033D1F0EE75900DE398C /* MPCHandler.swift in Sources */,
 				C0A5DCCF1F0E8E86008DC0C5 /* ViewController.swift in Sources */,
 				C0A5DCEA1F0E9455008DC0C5 /* CardViewController.swift in Sources */,
 				C0A5DCDF1F0E8F2E008DC0C5 /* Card.swift in Sources */,
@@ -346,6 +359,7 @@
 				C0A5DCDD1F0E8E86008DC0C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
